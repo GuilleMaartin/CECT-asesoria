@@ -36,6 +36,7 @@ header{
     url(/imagenes/pexels-lukas-590041.jpg);
     background-size: cover;
     background-position: center;
+    height: 100svh;
 
     .logo{
         display: flex;
@@ -114,7 +115,7 @@ main{
 
 aside{
     background-color: var(--color-white);
-    height: 100dvh;
+    height: 180dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;

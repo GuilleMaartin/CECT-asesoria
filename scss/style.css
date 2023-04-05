@@ -32,7 +32,7 @@ header {
   background: linear-gradient(rgba(79, 82, 255, 0.7), rgba(79, 82, 255, 0.7)), url(/imagenes/pexels-lukas-590041.jpg);
   background-size: cover;
   background-position: center;
-  height: 100svh;
+  height: 100dvh;
 }
 header .logo {
   display: flex;

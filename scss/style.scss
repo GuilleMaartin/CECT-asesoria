@@ -147,6 +147,29 @@ aside{
 
 
 /*Section media queries*/
+@media screen and (min-width:500px) {
+    header{
+        height: 90dvh;
+    }
+    aside{
+        height: 150dvh;
+    }
+    main{
+        height: 100dvh;
+    }
+}
+
+@media screen and (min-width:768px) {
+    header{
+        height: 90dvh;
+    }
+    aside{
+        height: 110dvh;
+    }
+    main{
+        height: 100dvh;
+    }
+}
 
 @media screen and (min-width:1500px){
     

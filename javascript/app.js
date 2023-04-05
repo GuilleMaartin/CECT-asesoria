@@ -1,4 +1,4 @@
-const fetch_URL = ("/javascript/train.json")
+const fetch_URL = ("javascript/train.json")
 
 const contenedor = document.getElementById("contenedor")
 

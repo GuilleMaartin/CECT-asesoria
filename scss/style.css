@@ -29,6 +29,7 @@
 }
 
 header {
+  position: relative;
   background: linear-gradient(rgba(79, 82, 255, 0.7), rgba(79, 82, 255, 0.7)), url(../imagenes/pexels-lukas-590041.jpg);
   background-size: cover;
   background-position: center;
@@ -37,7 +38,13 @@ header {
 header .logo {
   display: flex;
   justify-content: space-between;
+  background-color: var(--first-color);
+  align-items: center;
+  width: 100dvw;
   padding: 1.3rem;
+  position: fixed;
+  top: 0%;
+  right: 0;
 }
 header .logo div {
   display: flex;
@@ -125,6 +132,11 @@ aside .asideContenedores > p {
 }
 
 /*Section media queries*/
+@media screen and (max-width: 499px) {
+  header .title {
+    margin-top: 5rem;
+  }
+}
 @media screen and (min-width: 500px) {
   header {
     height: 90dvh;
@@ -166,5 +178,16 @@ aside .asideContenedores > p {
   .title div p {
     font-size: var(--secfont-size);
     margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  header {
+    height: 80dvh;
+  }
+  aside {
+    height: 60dvh;
+  }
+  main {
+    height: 60dvh;
   }
 }/*# sourceMappingURL=style.css.map */

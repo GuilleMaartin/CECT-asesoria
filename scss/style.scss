@@ -28,6 +28,7 @@
 }
 
 header{
+    position: relative;
     background: 
     linear-gradient(
       rgba(79, 82, 255, 0.70),
@@ -41,7 +42,13 @@ header{
     .logo{
         display: flex;
         justify-content: space-between;
+        background-color: var(--first-color);
+        align-items: center;
+        width: 100dvw;
         padding: 1.3rem;
+        position: fixed;
+        top:0%;
+        right: 0;
 
         div{
             display: flex;
@@ -65,7 +72,6 @@ header{
         margin: 1rem;
         padding: 1.3rem;
         height: 85dvh;
-
 
         div{
             height: auto;
@@ -147,6 +153,13 @@ aside{
 
 
 /*Section media queries*/
+@media screen and (max-width:499px) {
+    header{
+        .title{
+            margin-top: 5rem;
+        }
+    }
+}
 @media screen and (min-width:500px) {
     header{
         height: 90dvh;
@@ -192,5 +205,16 @@ aside{
                 margin-top: 2rem;   
             }
         }
+    }
+}
+@media screen and (min-width:1500px){
+    header{
+        height: 80dvh;
+    }
+    aside{
+        height: 60dvh;
+    }
+    main{
+        height: 60dvh; 
     }
 }

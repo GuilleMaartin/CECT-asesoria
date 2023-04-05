@@ -2,7 +2,7 @@ const fetch_URL = ("/javascript/train.json")
 
 const contenedor = document.getElementById("contenedor")
 
-async function loading(){
+function loading(){
     fetch(fetch_URL)
 
     .then(function(res){

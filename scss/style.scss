@@ -84,8 +84,8 @@ header{
 main{
     display: flex;
     flex-direction: column;
-
-    min-height: 150dvh;
+    justify-content: center;
+    height: 150dvh;
     background-color: var(--color-white);
 
     div:first-child{
@@ -114,17 +114,19 @@ main{
 
 aside{
     background-color: var(--color-white);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 300px 300px 300px;
-    align-content: center;
-    text-align: center;
-    gap: 1rem;
     height: 100dvh;
 
     h1{
         margin: 1rem;
         padding: 1rem;
+    }
+    #contenedor{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 300px;
+        align-content: center;
+        text-align: center;
+        gap: 1rem;
     }
     .asideContenedores > p{
         text-align: left;

@@ -1,6 +1,6 @@
 const fetch_URL = ("/javascript/train.json")
 
-const aside = document.querySelector("aside")
+const contenedor = document.getElementById("contenedor")
 
 async function loading(){
     fetch(fetch_URL)
@@ -22,7 +22,7 @@ async function loading(){
                 `
            });
 
-        aside.innerHTML = html;
+        contenedor.innerHTML = html;
     })    
     .catch(err => {
         console.log(err)

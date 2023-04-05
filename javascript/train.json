@@ -1,0 +1,17 @@
+[
+    {
+        "number":"01.",
+        "asesoria":"Investigacion y analisis de opinion publica",
+        "backcolor":"#ECB442"
+    },
+    {
+        "number":"02.",
+        "asesoria":"Asesoramiento estrategico en comunicacion",
+        "backcolor":"#D5DFDE"
+    },
+    {
+        "number":"03.",
+        "asesoria":"Gestion en redes sociales y medios digitales",
+        "backcolor":"#CACAFF"
+    }
+]

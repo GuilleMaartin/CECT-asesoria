@@ -115,6 +115,9 @@ main{
 aside{
     background-color: var(--color-white);
     height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1{
         margin: 1rem;

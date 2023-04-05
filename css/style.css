@@ -101,6 +101,9 @@ main p > span {
 aside {
   background-color: var(--color-white);
   height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 aside h1 {
   margin: 1rem;

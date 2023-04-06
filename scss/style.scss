@@ -100,6 +100,7 @@ aside{
     h1{
         margin: 1rem;
         padding: 1rem;
+        font-size: var(--fffont-size);
     }
     #contenedor{
         display: grid;
@@ -108,6 +109,7 @@ aside{
         align-content: center;
         text-align: center;
         gap: 1rem;
+        font-size: 1rem;
     }
     .asideContenedores{
         border-radius: 1rem;
@@ -116,7 +118,6 @@ aside{
     .asideContenedores > p{
         text-align: left;
         padding: 1rem;
-        font-size: var(--fffont-size);
     }
 }
 
@@ -131,6 +132,7 @@ main{
         margin: 1rem;
         padding: 1rem;
         min-width: 300px;
+        font-size: var(--fffont-size);
     }
     div:nth-child(2){
         display: flex;
@@ -178,6 +180,7 @@ footer{
         align-items: center;
         
     form {
+        margin: 1rem;
       min-width: 300px;  
       padding: 20px;
       border: 2px solid #ccc;

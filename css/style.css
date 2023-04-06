@@ -78,6 +78,35 @@ header .title div p {
   margin-top: 2rem;
 }
 
+aside {
+  background-color: var(--color-white);
+  height: 180dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+aside h1 {
+  margin: 1rem;
+  padding: 1rem;
+}
+aside #contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 250px;
+  align-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+aside .asideContenedores {
+  border-radius: 1rem;
+  margin: 1rem;
+}
+aside .asideContenedores > p {
+  text-align: left;
+  padding: 1rem;
+  font-size: var(--fffont-size);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -106,35 +135,72 @@ main p > span {
   font-size: var(--thfont-size);
 }
 
-aside {
-  background-color: var(--color-white);
-  height: 180dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+footer {
+  background: linear-gradient(rgba(69, 69, 71, 0.7), rgba(69, 69, 71, 0.7)), url(../imagenes/pexels-pixabay-416320.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
 }
-aside h1 {
+footer .contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 100dvh;
+}
+footer .contenedor h1 {
   margin: 1rem;
   padding: 1rem;
 }
-aside #contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 300px;
-  align-content: center;
-  text-align: center;
-  gap: 1rem;
+footer div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-aside .asideContenedores > p {
-  text-align: left;
-  padding: 1rem;
-  font-size: var(--fffont-size);
+footer div:nth-child(2) form {
+  min-width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: var(--Fifth-color);
+}
+footer div:nth-child(2) label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+footer div:nth-child(2) input[type=text],
+footer div:nth-child(2) input[type=email],
+footer div:nth-child(2) textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+footer div:nth-child(2) textarea {
+  height: 8rem;
+}
+footer div:nth-child(2) input[type=submit] {
+  background-color: var(--first-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+footer div:nth-child(2) input[type=submit]:hover {
+  background-color: rgba(58, 61, 255, 0.9254901961);
 }
 
 /*Section media queries*/
 @media screen and (max-width: 499px) {
   header .title {
     margin-top: 5rem;
+  }
+  footer {
+    height: 120dvh;
   }
 }
 @media screen and (min-width: 500px) {
@@ -146,6 +212,9 @@ aside .asideContenedores > p {
   }
   main {
     height: 100dvh;
+  }
+  footer {
+    height: 120dvh;
   }
 }
 @media screen and (min-width: 768px) {
